@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel - ScottySaaS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <h1>Admin Login</h1>
+  <p>Authorized Access Only</p>
+</section>
+
+<section class="products" id="loginBox">
+  <div class="card">
+    <input type="password" id="password" placeholder="Enter Admin Password">
+    <button onclick="login()">Login</button>
+  </div>
+</section>
+
+<section class="products" id="adminPanel" style="display:none;">
+  <div class="card">
+    <h3>Add New Product</h3>
+    <input id="name" placeholder="Product Name">
+    <input id="desc" placeholder="Description">
+    <input id="price" placeholder="Price ($1 / $2)">
+    <input id="image" placeholder="Image path (images/app.png)">
+    <button onclick="addProduct()">Add Product</button>
+    <br><br>
+    <button onclick="logout()" style="background:#ef4444;">Logout</button>
+  </div>
+</section>
+
+<script src="admin.js"></script>
+</body>
+</html>
